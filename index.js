@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const sep = require('./routes/sep.js');
 
 const app = express();
-const PORT = process.env.PORT || 8889;
+const PORT = process.env.PORT;
 
 app.use(bodyParser.json());
 
