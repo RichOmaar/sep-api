@@ -1,5 +1,5 @@
-import express from 'express';
-import puppeteer from 'puppeteer';
+const express = require('express');
+const puppeteer = require('puppeteer');
 
 const router = express.Router();
 const url = 'https://www.cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action';
@@ -48,4 +48,4 @@ router.get('/', async (req,res) => {
     res.send(response);
 });
 
-export default router;
+module.exports = router;

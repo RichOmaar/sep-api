@@ -1,11 +1,11 @@
-import express from 'express';
-import bodyParser from "body-parser";
+const express = require('express');
+const bodyParser = require('body-parser');
 
 // import usersRouter from './routes/users.js';
-import sep from './routes/sep.js';
+const sep = require('./routes/sep.js');
 
 const app = express();
-const PORT = 8889;
+const PORT = process.env.PORT || 8889;
 
 app.use(bodyParser.json());
 
